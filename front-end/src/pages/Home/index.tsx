@@ -7,6 +7,7 @@ import { Button, Input, Loader } from "../../components";
 import arrow from "../../assets/icons/arrow.svg";
 import { orderBy } from "../../services/ContactsService";
 import { useDebounceCallBack } from "../../hooks";
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   const [contacts, setContacts] = useState<IContact[]>([]);
@@ -62,7 +63,12 @@ export default function Home() {
               <strong>Nome</strong>
               <img data-order-by={orderBy} src={arrow} alt="Ordenar" />
             </button>
-            <Button>Novo Contato</Button>
+           
+            <Button> 
+              <Link to="/contatos"> 
+                Novo Contato
+              </Link>
+            </Button>
           </div>
         </header>
         {!contacts.length && (
