@@ -27,6 +27,18 @@ class ContactsService {
     const response = await api.post("/contacts", contactData);
     return response.data;
   }
+
+   // Busca um contato pelo ID
+   async getContactById(id: string) {
+    const response = await api.get<IContact>(`/contacts/${id}`);
+    return response.data;
+  }
+
+  // Atualiza um contato pelo ID
+  async updateContact(id: string, contactData: ICreateContactParams) {
+    const response = await api.put(`/contacts/${id}`, contactData);
+    return response.data;
+  }
 }
 
 export default new ContactsService();

@@ -1,4 +1,4 @@
-import { Contact, Home } from "../../pages";
+import { Contact, EditContact, Home } from "../../pages";
 import { Header } from "../Layout";
 import styles from "./styles.module.css";
 
@@ -11,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contatos" element={<Contact />} />
+        <Route path="/edit/:id" element={<EditContact />} />
       </Routes>
     </div>
   );

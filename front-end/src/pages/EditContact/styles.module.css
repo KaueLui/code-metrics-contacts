@@ -1,0 +1,125 @@
+:root {
+    --primary-1: #e4d9ee;
+    --primary-2: #caafe3;
+    --primary-3: #b180df;
+    --primary-4: #9b51e0;
+    --primary-5: #8824e6;
+    --primary-6: #720ecf;
+    --primary-7: #54079d;
+    --primary-8: #38006c;
+    --primary-9: #1e0052;
+  
+    --secondary-1: #ffffff;
+    --secondary-2: #f7f7f7;
+    --secondary-3: #ededed;
+    --secondary-4: #dedede;
+    --secondary-5: #cccccc;
+    --secondary-6: #b3b3b3;
+    --secondary-7: #9c9c9c;
+    --secondary-8: #707070;
+    --secondary-9: #595959;
+    --secondary-10: #404040;
+    --secondary-11: #2e2e2e;
+    --secondary-12: #121212;
+    --secondary-13: #000000;
+  }
+  
+  * {
+    font-size: 16px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: var(--secondary-11);
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--secondary-2);
+    border-radius: 8px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-4);
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--secondary-1);
+    margin-bottom: 5px;
+  }
+  
+  input,
+  select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid var(--secondary-4);
+    border-radius: 4px;
+    width: 100%;
+    background-color: var(--secondary-3);
+    color: var(--secondary-13);
+  }
+  
+  select {
+    appearance: none;
+    background-color: var(--secondary-3);
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"%3E%3Cpath fill="none" d="M5 7l5 5 5-5H5z"%3E%3C/path%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+  }
+  
+  .errorText {
+    color: var(--primary-5);
+    font-size: 12px;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .cancelButton {
+    background-color: var(--primary-5);
+    color: var(--secondary-1);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .cancelButton:hover {
+    background-color: var(--primary-6);
+  }
+  
+  button {
+    background-color: var(--primary-4);
+    color: var(--secondary-1);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--primary-3);
+  }
+  
